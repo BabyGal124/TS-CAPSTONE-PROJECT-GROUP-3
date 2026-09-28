@@ -6,6 +6,7 @@
 
 :root{
     /*Colors*/
+    --white-text-color:#FFFFFF;
     --white-color:#FFFFFF;
     --blue-color: #0079FF;
     --black-color:#2B3442;
@@ -67,7 +68,31 @@ html{
     padding: 0 20px;
     max-width: var(--site-max-width);
 }
-
+body{
+    background-color: var(--light-white);
+}
 
 
 /* Styling for the page= */
+
+
+
+
+
+/* Styling for color Switch */
+/* @media(prefers-color-scheme: dark){
+    :root{
+ --white-text-color:#D1E3FF;
+    --white-color:#1E2A47;
+    --blue-color: #0079FF;
+    --black-color:#2B3442;
+    --light-white: #141D2F;
+    --dark-blue: #FFFFFF;
+    --text-blue:#90A4D4;
+    --light-blue:#D1E3FF;
+    --footer-text:#D1E3FF;
+    --icons-color:#FFFFFF;
+
+    }
+   
+} */
