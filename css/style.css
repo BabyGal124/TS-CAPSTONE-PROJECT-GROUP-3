@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors*/
+    --white-color:#FFFFFF;
+    --blue-color: #0079FF;
+    --black-color:#2B3442;
+    --light-white: #F6F8FF;
+    --dark-blue: #164BAF;
+    --text-blue:#0F2A44;
+    --light-blue:#D1E3FF;
+    --footer-text:#4B6A9B;
+    --icons-color:#141D2F;
+
+            
+    /*Font-Family */
+    --font-heading: "Space Mono", monospace;
+    --font-body: "Inter", sans-serif;
+
+
+     /* font size*/
+     --font-size-s:13px;
+    --font-size-t:15px;
+    --font-size-n:16px; 
+    --font-size-m:18px;
+    --font-size-1:26px;
+
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    
+    /* Line Heights */
+    --line-height-body:150%;
+
+    /*site max width */
+    --site-max-width:1200px;
+}
+
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+
+
+/* Styling for the page= */
