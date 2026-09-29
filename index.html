@@ -8,8 +8,8 @@
     <title>Our Planet</title>
     <!-- Linking Favicon -->
       <link rel="icon" type="image/png" href="./assests/images/favicon/favicon-96x96.png" sizes="96x96"/>
-<link rel="icon" type="image/svg+xml" href="./assests/images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="./assests/images/favicon/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="./assests/images/favicon/favicon.svg"/>
+<link rel="shortcut icon" href="./assests/images/favicon/favicon.ico"/>
      <!-- Linking Goggle Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,119 @@
 <body>
 
     <!-- Header Section -->
-     <header>
+     <header class="page-header">
+        <div class="header-container">
+            <a href="./index.html" class="page-logo" aria-label="planet Explorer Home">
+                <img src="./assests/images/logo-dark.png" alt="Planet Explorer Logo">
+                
+            </a>
+
+            <button type="button" class="theme-toggle" aria-label="switch between light and dark mode">
+                <span class="theme-text">DARK</span>
+                <span class="theme-icon" aria-hidden="true">
+                    <img src="./assests/images/Half moon.svg" alt="">
+                </span>
+                
+            </button>
+
+        </div>
+
 
      </header>
 
      <!-- Main content -->
 
     <main>
+
+        <section class="search-section" aria-label="planet search">
+           <form class="planet-search" role="search">
+           <!-- please remember to download the search icon -->
+            <img src="./assests/images/Search-Icon.svg" alt="" class="search-icon">
+
+            
+            
+            <input type="search" id="planet-search" name="planet" placeholder="search planet name.." aria-label="search for a planet">
+            <button type="submit" class="search-button">search</button>
+
+           </form>
+
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section"  aria-label="Planet information">
+          <article class="planet-card">
+
+            <!-- planet Image -->
+            <div class="planet-image">
+                <img id="planet-image" src="" alt="">
+           </div>
+
+           <!-- planet-information -->
+           <div class="planet-content">
+                <header class="planet-header">
+                    <h1 id="planet-name"></h1>
+                    <p id="planet-type"></p>
+                </header>
+
+               <p id="planet-description"></p>
+
+               <!-- Information box Statistics -->
+               <div class="planet-stats">
+                    <div>
+                        <span class="stat-label">Gravity</span>
+                        <strong id="planet-gravity"></strong>
+                        
+                    </div>
+
+                    <div>
+                        <span class="stat-label">Mass</span>
+                        <strong id="planet-mass"></strong>
+                        
+                    </div>
+
+                    <div>
+                        <span class="stat-label">Period</span>
+                        <strong id="planet-period"></strong>
+                        
+                    </div>
+
+               </div>
+
+               <!-- Four Icon/value items below  the information-->
+
+               <div class="planet-facts">
+                     <div class="planet-fact">
+                        <img src="./assests/images/Temperature icon.svg" alt="" class="fact-icon">
+                        <span id="planet-temperature"></span>
+                    </div>
+
+                    <div class="planet-fact">
+                        <img src="./assests/images/Half moon.svg" alt="" class="fact-icon">
+                        <span id="planet-moons"></span>
+                    </div>
+
+                    <div class="planet-fact">
+                        <img src="./assests/images/diameter-icon.svg" alt="" class="fact-icon">
+                        <span id="planet-diameter"></span>
+                    </div>
+
+                    <div class="planet-fact">
+                        <img src="./assests/images/Setting-Icon.svg" alt="" class="fact-icon">
+                        <span id="planet-distance"></span>
+                    </div>
+
+
+
+               </div>
+
+           </div>
+
+
+
+          </article>  
+
+
+        </section>
 
     </main>
 
