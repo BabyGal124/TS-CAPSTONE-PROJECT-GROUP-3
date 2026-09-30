@@ -1,25 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="About Our Planets">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Esther, Ngozi, Emmanuel, Abdulrahman, Ibrahim">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="About Our Planets" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Esther, Ngozi, Emmanuel, Abdulrahman, Ibrahim"
+    />
     <title>Our Planet</title>
     <!-- Linking Favicon -->
-      <link rel="icon" type="image/png" href="./assests/images/favicon/favicon-96x96.png" sizes="96x96"/>
-<link rel="icon" type="image/svg+xml" href="./assests/images/favicon/favicon.svg"/>
-<link rel="shortcut icon" href="./assests/images/favicon/favicon.ico"/>
-     <!-- Linking Goggle Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assests/images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assests/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./assests/images/favicon/favicon.ico" />
+    <!-- Linking Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-      <!-- Linking Styling Sheet -->
-       <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <!-- Linking Styling Sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
+ 
     <!-- Header Section -->
      <header class="page-header">
         <div class="header-container">
@@ -37,13 +52,13 @@
             </button>
 
         </div>
+       </header>
 
-
-     </header>
-
-     <!-- Main content -->
+<body>
+    <!-- Main content -->
 
     <main>
+      
 
         <section class="search-section" aria-label="planet search">
            <form class="planet-search" role="search">
@@ -135,15 +150,104 @@
 
         </section>
 
+   
+    <!-- Table section -->
+      <section id="table-section" class="table-wrapper">
+        <h2>Planetary Facts at a Glance</h2>
+        <p>
+          Below is a comparative table of major planets in our solar system. The
+          data highlights key physical properties used by astronomers and
+          researchers worldwide.
+        </p>
+        <table>
+          <caption>
+            Data about the planets of our solar system (Planetary facts taken
+            from NASA)
+          </caption>
+
+          <thead>
+            <tr>
+              <th colspan="2"></th>
+              <th scope="col">Name</th>
+              <th scope="col" class="quantity-col">Mass (10 24kg)</th>
+              <th scope="col" class="quantity-col">Diameter (km)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Terrestrial Planets -->
+            <tr>
+              <th scope="rowgroup" rowspan="4" colspan="2">
+                Terrestrial<br />Planets
+              </th>
+              <th scope="row" class="planet-name">Mercury</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="planet-name">Venus</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="planet-name">Earth</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="planet-name">Mars</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <!-- Jovian - Gas Giants -->
+            <tr>
+              <th scope="rowgroup" rowspan="4">Jovian<br />Planets</th>
+              <th scope="rowgroup" rowspan="2">Gas Giants</th>
+              <th scope="row" class="planet-name">Jupiter</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="planet-name">Saturn</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <!-- Jovian - Ice Giants -->
+            <tr>
+              <th scope="rowgroup" rowspan="2">Ice Giants</th>
+
+              <th scope="row" class="planet-name">Uranus</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <tr>
+              <th scope="row" class="planet-name">Neptune</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+
+            <!-- Dwarf Planets -->
+            <tr>
+              <th scope="row" colspan="2">Dwarf Planets</th>
+              <th scope="row" class="planet-name">Pluto</th>
+              <td class="quantity-col">0.330</td>
+              <td class="quantity-col">4,878</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
 
     <!-- Footer Section -->
-     <footer>
-
-     </footer>
-
-
+    <footer></footer>
 
     <script src="./script/script.js"></script>
-</body>
+  </body>
 </html>
