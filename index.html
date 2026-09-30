@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="author"
-      content="Esther, Ngozi, Emmanuel, Abdulrahman, Ibrahim"
+      content="Joy, Ngozi, Emmanuel, Abdulrahman, Ibrahim, Comfort, Toyosi, Isreal"
     />
     <title>Our Planet</title>
     <!-- Linking Favicon -->
     <link
       rel="icon"
       type="image/png"
-      href="./assests/images/favicon/favicon-96x96.png"
+      href="./assets/images/favicon/favicon-96x96.png"
       sizes="96x96"
     />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="./assests/images/favicon/favicon.svg"
+      href="./assets/images/favicon/favicon.svg"
     />
-    <link rel="shortcut icon" href="./assests/images/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
     <!-- Linking Goggle Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,19 +34,19 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
- 
+ <body>
     <!-- Header Section -->
-     <header class="page-header">
+     <header class="page-header section-content">
         <div class="header-container">
             <a href="./index.html" class="page-logo" aria-label="planet Explorer Home">
-                <img src="./assests/images/logo-dark.png" alt="Planet Explorer Logo">
+                <img src="./assets/images/logo-dark.png" alt="Planet Explorer Logo">
                 
             </a>
 
             <button type="button" class="theme-toggle" aria-label="switch between light and dark mode">
                 <span class="theme-text">DARK</span>
                 <span class="theme-icon" aria-hidden="true">
-                    <img src="./assests/images/Half moon.svg" alt="">
+                    <img src="./assets/images/Half moon.svg" alt="">
                 </span>
                 
             </button>
@@ -54,29 +54,30 @@
         </div>
        </header>
 
-<body>
     <!-- Main content -->
 
     <main>
       
 
         <section class="search-section" aria-label="planet search">
-           <form class="planet-search" role="search">
-           <!-- please remember to download the search icon -->
-            <img src="./assests/images/Search-Icon.svg" alt="" class="search-icon">
+          <div class="section-content">
+               <form class="planet-search" role="search">
+         
+            <img src="./assets/images/Search Icon.svg" alt="" class="search-icon">
 
-            
-            
             <input type="search" id="planet-search" name="planet" placeholder="search planet name.." aria-label="search for a planet">
             <button type="submit" class="search-button">search</button>
 
            </form>
+          </div>
+        
 
         </section>
 
         <!-- Hero Section -->
         <section class="hero-section"  aria-label="Planet information">
-          <article class="planet-card">
+          <div class="section-content">
+              <article class="planet-card">
 
             <!-- planet Image -->
             <div class="planet-image">
@@ -137,22 +138,19 @@
                         <span id="planet-distance"></span>
                     </div>
 
-
-
                </div>
 
            </div>
 
-
-
           </article>  
 
-
+          </div>
         </section>
 
    
     <!-- Table section -->
       <section id="table-section" class="table-wrapper">
+        <div class="section-content">
         <h2>Planetary Facts at a Glance</h2>
         <p>
           Below is a comparative table of major planets in our solar system. The
@@ -242,12 +240,46 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer></footer>
+        <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="section-content">
+        <div class="footer-container">
+          <nav class="footer-left-container" aria-label="Contributors">
+            <h3 class="footer-title">About</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="https://github.com/BabyGal124" target="_blank"  rel="noopener" class="footer-link">Esther</a></li>
+              <li class="footer-item"><a href="https://github.com/NgoziMadu" target="_blank" rel="noopener"  class="footer-link">Ngozi</a></li>
+              <li class="footer-item"><a href="https://github.com/comfortibok" target="_blank" rel="noopener"  class="footer-link">Comfort</a></li>
+              <li class="footer-item"><a href="https://github.com/Emmanuel10-tech" target="_blank" rel="noopener"  class="footer-link">Emmanuel</a></li>
+              <li class="footer-item"><a href="https://github.com/Tiamiyu-Abdulrahman1" target="_blank" rel="noopener"  class="footer-link">Abdulrahman</a></li>
+              <li class="footer-item"><a href="https://github.com/Loner533" target="_blank" rel="noopener"  class="footer-link">Toyosi</a></li>
+              <li class="footer-item"><a href="https://github.com/IBFloat" target="_blank" rel="noopener"  class="footer-link">Ibrahim</a></li>
+              <li class="footer-item"><a href="https://github.com/easyarita" target="_blank"  rel="noopener" class="footer-link">Isreal</a></li>
+            </ul>
+          </nav>
 
+          <nav class="footer-right-container" aria-label="Credits and related links">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="http://amakandukwu.com/" target="_blank" rel="noopener"  class="footer-link">&copy;2026 Design by Amaka N</a>
+              </li>
+              <li class="footer-item">
+                <a href="https://github.com/BabyGal124/TS-CAPSTONE-PROJECT-GROUP-3" target="_blank" rel="noopener"  class="footer-link">Bulit by Group 3. All rights reserved.</a>
+              </li>
+              <li class="footer-item">
+                <a href="https://tsacademyonline.com/" target="_blank" rel="noopener"  class="footer-link">TSAcademy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+  
     <script src="./script/script.js"></script>
   </body>
 </html>
