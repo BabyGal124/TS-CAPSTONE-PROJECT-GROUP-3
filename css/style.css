@@ -196,7 +196,7 @@ width: 156.6px;
 
 
  .footer-container {
-    display :flex ;
+    display:flex;
     justify-content: space-between;
     align-items: flex-start;
     gap : 80px;
