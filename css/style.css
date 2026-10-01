@@ -16,6 +16,7 @@
     --light-blue:#D1E3FF;
     --footer-text:#4B6A9B;
     --icons-color:#141D2F;
+    --light-grey: #F2F7FF;
 
             
     /*Font-Family */
@@ -30,6 +31,7 @@
     --font-size-m:18px;
     --font-size-1:20px;
     --font-size-x1:26px;
+    --font-size-x2: 32px;
 
     
 
@@ -97,7 +99,94 @@ body{
 
     }
    
-} */
+
+
+/* Styling for the table */
+
+.table-wrapper{
+  width: var(--section-width);
+  height: 787px;
+  gap: 40px;
+ angle: 0 deg;
+opacity: 1; 
+padding: 0 20px;
+}
+
+.table-wrapper h2 {
+    font-size: var(--font-size-x2);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-body);
+    line-spacing: -2%;
+    color: var(--dark-blue);
+    font-family: var(--font-body);
+    margin-bottom: 10px;
+}
+
+.table-wrapper p {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    line-spacing: 0%;
+    color: var(--text-blue);
+    margin-bottom: 24px;
+}
+
+.table-wrapper table {
+   text-align: center;
+}
+
+table caption {
+    font-size: var(--font-size-m);
+    font-weight: var( --font-weight-semibold);
+    line-height: var(--line-height-body);
+    letter-spacing: -2%;
+    font-family: var(--font-body);
+    color: var(--text-blue);
+}
+
+/* Styling for the table header */
+
+thead th {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+  width: 156.6px;
+    height: 60px;
+    top: 38.08px;
+    border: 2px solid var(--white-color ); 
+    font-weight: var(--font-weight-bold);
+}
+
+
+thead th:nth-child(1) { 
+  border-radius: 16px 0px  0px 0px;
+    width: 256.11px;
+}
+
+thead th:nth-child(4) { 
+  border-radius: 0px 16px  0px 0px;
+}
+
+
+/* Styling for the table body - first row */
+
+tbody .side-planet-name {
+  background-color: var(--light-blue);
+  font-weight: var(--font-weight-bold);
+}
+
+table tbody th, td{
+width: 156.6px;
+    height: 60.38px; 
+    border: 2px solid var(--white-color ); 
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-n);
+    line-height: var(--line-height-body);
+    line-spacing: -2%;
+    background-color: var(--light-grey );
+}
+
+
+ */
  /* Styling for the page= */
  .footer-section{
     width: 100%;
@@ -145,8 +234,3 @@ body{
         font-weight: var(--font-weight-semibold);
        
     }
-
-
-
-
-

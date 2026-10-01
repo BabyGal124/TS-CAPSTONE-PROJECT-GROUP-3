@@ -147,17 +147,16 @@
           </div>
         </section>
 
-   
-    <!-- Table section -->
+      <!-- Table section -->
       <section id="table-section" class="table-wrapper">
-        <div class="section-content">
         <h2>Planetary Facts at a Glance</h2>
         <p>
           Below is a comparative table of major planets in our solar system. The
           data highlights key physical properties used by astronomers and
           researchers worldwide.
         </p>
-        <table>
+
+        <table style="border-collapse: collapse">
           <caption>
             Data about the planets of our solar system (Planetary facts taken
             from NASA)
@@ -175,7 +174,7 @@
           <tbody>
             <!-- Terrestrial Planets -->
             <tr>
-              <th scope="rowgroup" rowspan="4" colspan="2">
+              <th scope="rowgroup" rowspan="4" colspan="2" class="side-planet-name">
                 Terrestrial<br />Planets
               </th>
               <th scope="row" class="planet-name">Mercury</th>
@@ -203,8 +202,8 @@
 
             <!-- Jovian - Gas Giants -->
             <tr>
-              <th scope="rowgroup" rowspan="4">Jovian<br />Planets</th>
-              <th scope="rowgroup" rowspan="2">Gas Giants</th>
+              <th scope="rowgroup" rowspan="4" class="side-planet-name">Jovian<br />Planets</th>
+              <th scope="rowgroup" rowspan="2" class="side-planet-name">Gas Giants</th>
               <th scope="row" class="planet-name">Jupiter</th>
               <td class="quantity-col">0.330</td>
               <td class="quantity-col">4,878</td>
@@ -218,7 +217,7 @@
 
             <!-- Jovian - Ice Giants -->
             <tr>
-              <th scope="rowgroup" rowspan="2">Ice Giants</th>
+              <th scope="rowgroup" rowspan="2" class="side-planet-name">Ice Giants</th>
 
               <th scope="row" class="planet-name">Uranus</th>
               <td class="quantity-col">0.330</td>
@@ -233,14 +232,13 @@
 
             <!-- Dwarf Planets -->
             <tr>
-              <th scope="row" colspan="2">Dwarf Planets</th>
+              <th scope="row" colspan="2" class="side-planet-name">Dwarf Planets</th>
               <th scope="row" class="planet-name">Pluto</th>
               <td class="quantity-col">0.330</td>
               <td class="quantity-col">4,878</td>
             </tr>
           </tbody>
         </table>
-        </div>
       </section>
     </main>
 
