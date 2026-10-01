@@ -185,7 +185,7 @@ flex:1
     line-height: 160%;
 }
 
-/* /* mobile responsiveness */
+ /* mobile responsiveness */
 @media (max-width: 768px){
 
     . footer-section{
@@ -234,4 +234,4 @@ flex:1
             font-size: 14px;
         }
     }
-} */
+} 
