@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -96,3 +96,142 @@ body{
     }
    
 } */
+ /* Styling for the page= */
+ .footer-section{
+    width: 100%;
+    background: #141D2F;
+    color: #D1E3FF;
+    padding:45px 0 40px;
+ }
+
+
+ . footer-section .section-content {
+    width: 100%;
+ }
+
+ .footer-container {
+    width: 100%;
+    max-width:120px ;
+    margin: 0 auto;
+
+    display flex ;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap : 80px;
+ }
+
+
+/* left side of the footer*/
+.footer-left-container{
+flex:1
+}
+. footer-title{
+    margin: 0 0 20px;
+
+    color: #D1E3FF;
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700px;
+    
+}
+
+
+. footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+. footer-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+. footer-link {
+    color: #D1E3FF;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 160%;
+}
+
+. footer-link:hover {
+    text-decoration: underline;
+} 
+
+
+/* right side of the footer*/
+. footer-right-container{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+. footer-right-context{
+    text-align: left;
+}
+
+. footer-right-container  .footer-item{
+    margin-bottom: 2px;
+}
+
+.footer-right-container .footer-link{
+    color: #D1E3FF;
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 160%;
+}
+
+/* mobile responsiveness */
+@media (max-width: 768px){
+
+    . footer-section{
+        padding: 35px 25px;
+    }
+
+     . footer-container {
+    flex-direction: column;
+    gap:30px;
+    }
+
+    . footer-left-container,
+    . footer-right-container {
+        width: 100%;
+    }
+
+    . footer-right-container {
+        display:block;
+    }
+
+    . footer-right-container . footer-list{
+        text-align left;
+    }
+
+    . footer-title{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    . footer-link {
+        font-size: 15px;
+    }
+
+/* smaller mobile responsiveness */
+    @media (max-width: 480px){
+        . footer-section{
+            padding: 30px 20px;
+        }
+
+        . footer-title{
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        . footer-link {
+            font-size: 14px;
+        }
+    }
+}
