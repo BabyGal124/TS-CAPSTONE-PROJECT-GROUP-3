@@ -82,10 +82,239 @@ body{
 
 }
 
+/* styling for the header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 
-/* Styling for the page= */
+.page-logo img {
+    width: 121px;
+    height: auto;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Focuus state of the theme toggle */
+
+.theme-toggle:focus {
+    box-shadow: 0 0 0 3px var(--light-white),
+                0 0 0 5px var(--blue-color);
+                
+    border-radius: 4px;
+}
+
+.theme-text {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-s);
+    line-height: 140%;
+    letter-spacing: 2.5px;
+    color: var(--footer-text);
+    font-weight: var(--font-weight-bold);
+}
+
+.theme-icon img {
+    width: 20px;
+    height: 20px;
+  
+}
+
+/* styling for search section */
 
 
+/* section-gap */
+.search-section {
+    margin-top: 40px;
+}
+
+.planet-search {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    padding: 8px 12px 8px 24px;
+    justify-content: space-between;
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
+    
+}
+
+/* planet-search focus */
+
+.planet-search:focus-within {
+    box-shadow: 0 0 0 3px var(--light-white),
+                0 0 0 5px var(--blue-color),
+    0 16px 30px -10px rgba(70, 96, 187, 0.198);    
+
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-normal);
+    line-height: 140%;
+    color: var(--footer-text);
+    
+}
+
+.search-button {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-bold);
+    line-height: 150%;
+}
+
+/* Search Button Focus */
+.search-button:focus {
+    box-shadow: 0 0 0 2px var(--light-white),
+                0 0 0 4px var(--blue-color);
+}
+
+/* search button hover */
+.search-button:hover {
+    background-color: #60ABFF;
+}
+
+/* Styling for the hero section */
+
+/* section-gap */
+.hero-section {
+    margin-top: 40px;
+}
+
+.planet-card {
+    display: flex;
+    width: 100%;
+    padding: 48px;
+    gap: 32px;
+    border-radius: 15px;
+    background-color: var(--white-color);
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
+
+}
+
+.planet-image img{
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.planet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 480px;
+
+}
+
+#planet-name {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    color: var(--black-color);
+}
+
+#planet-type {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-normal);
+    line-height: 150%;
+    color: var(--blue-color);
+    
+}
+#planet-description {
+   font-family: var(--font-heading);
+   font-size: var(--font-size-t);
+   font-weight: var(--font-weight-normal);
+   color: var(--footer-text);
+   opacity: 0.75;
+   line-height: var(--line-height-body);
+
+
+}
+
+/* styling for the gravity, mass, period container */
+
+.planet-stats {
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: var(--light-white);
+}
+
+.planet-stats > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    
+}
+
+.stat-label {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    color: var(--footer-text);
+}
+
+#planet-gravity, #planet-mass, #planet-period {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: var(--font-weight-bold);
+    line-height: 140%;
+    color: var(--black-color);
+}
+
+/* styling for the hero planet-facts  sections */
+.planet-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.planet-fact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.fact-icon {
+    width: 24px;
+    height: 24px;
+}
+#planet-temperature, #planet-diameter, #planet-moons, #planet-distance {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-t);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    color: var(--footer-text);
+}
 
 
 
