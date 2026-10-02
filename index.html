@@ -36,7 +36,8 @@
 
  <body>
     <!-- Header Section -->
-     <header class="page-header section-content">
+     <header class="page-header section">
+      <div class="section-content">
         <div class="header-container">
             <a href="./index.html" class="page-logo" aria-label="planet Explorer Home">
                 <img src="./assets/images/logo-dark.png" alt="Planet Explorer Logo">
@@ -46,12 +47,14 @@
             <button type="button" class="theme-toggle" aria-label="switch between light and dark mode">
                 <span class="theme-text">DARK</span>
                 <span class="theme-icon" aria-hidden="true">
-                    <img src="./assets/images/Half moon.svg" alt="">
+                    <img src="./assets/images/Theme Icon-moon.svg" alt="">
                 </span>
                 
             </button>
 
         </div>
+      </div>
+        
        </header>
 
     <!-- Main content -->
@@ -59,13 +62,13 @@
     <main>
       
 
-        <section class="search-section" aria-label="planet search">
+        <section class="search-section section" aria-label="planet search">
           <div class="section-content">
                <form class="planet-search" role="search">
          
             <img src="./assets/images/Search Icon.svg" alt="" class="search-icon">
 
-            <input type="search" id="planet-search" name="planet" placeholder="search planet name.." aria-label="search for a planet">
+            <input type="search" id="planet-search" class="search-input" name="planet" placeholder="search planet name.." aria-label="search for a planet">
             <button type="submit" class="search-button">search</button>
 
            </form>
@@ -75,7 +78,7 @@
         </section>
 
         <!-- Hero Section -->
-        <section class="hero-section"  aria-label="Planet information">
+        <section class="hero-section section"  aria-label="Planet information">
           <div class="section-content">
               <article class="planet-card">
 
@@ -119,22 +122,22 @@
 
                <div class="planet-facts">
                      <div class="planet-fact">
-                        <img src="./assests/images/Temperature icon.svg" alt="" class="fact-icon">
+                        <img src="./assets/images/Temperature icon.svg" alt="" class="fact-icon">
                         <span id="planet-temperature"></span>
                     </div>
 
                     <div class="planet-fact">
-                        <img src="./assests/images/Half moon.svg" alt="" class="fact-icon">
+                        <img src="./assets/images/Half moon.svg" alt="" class="fact-icon">
                         <span id="planet-moons"></span>
                     </div>
 
                     <div class="planet-fact">
-                        <img src="./assests/images/diameter-icon.svg" alt="" class="fact-icon">
+                        <img src="./assets/images/diameter-icon.svg" alt="" class="fact-icon">
                         <span id="planet-diameter"></span>
                     </div>
 
                     <div class="planet-fact">
-                        <img src="./assests/images/Setting-Icon.svg" alt="" class="fact-icon">
+                        <img src="./assets/images/Setting-Icon.svg" alt="" class="fact-icon">
                         <span id="planet-distance"></span>
                     </div>
 
@@ -148,8 +151,9 @@
         </section>
 
       <!-- Table section -->
-      <section id="table-section" class="table-wrapper">
-        <h2>Planetary Facts at a Glance</h2>
+      <section id="table-section" class="table-wrapper section">
+        <div class="section-content">
+          <h2>Planetary Facts at a Glance</h2>
         <p>
           Below is a comparative table of major planets in our solar system. The
           data highlights key physical properties used by astronomers and
@@ -239,11 +243,12 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </section>
     </main>
 
         <!-- Footer Section -->
-    <footer class="footer-section">
+    <footer class="footer-section section">
       <div class="section-content">
         <div class="footer-container">
           <nav class="footer-container-all" aria-label="Contributors">
