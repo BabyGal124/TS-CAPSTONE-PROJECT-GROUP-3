@@ -1,7 +1,47 @@
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Colors*/
+  --white-text-color: #ffffff;
+  --white-color: #ffffff;
+  --blue-color: #0079ff;
+  --black-color: #2b3442;
+  --light-white: #f6f8ff;
+  --dark-blue: #164baf;
+  --text-blue: #0f2a44;
+  --light-blue: #d1e3ff;
+  --footer-text: #4b6a9b;
+  --icons-color: #141d2f;
+  --light-grey: #f2f7ff;
+
+  /*Font-Family */
+  --font-heading: 'Space Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+
+  /* font size*/
+  --font-size-s: 13px;
+  --font-size-t: 15px;
+  --font-size-n: 16px;
+  --font-size-m: 18px;
+  --font-size-1: 20px;
+  --font-size-x1: 26px;
+  --font-size-x2: 32px;
+
+  /* font weight*/
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-body: 150%;
+
+  /*site max width */
+  --site-max-width: 1200px;
 }
 
 :root{
@@ -51,24 +91,24 @@
 
 
 /*Styling for the whole site*/
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-button{
-    cursor: pointer;
-    border: none;
-    background: none;
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 .section{
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     max-width: var(--site-max-width);
     width: 100%;
 }
@@ -77,8 +117,11 @@ html{
     width: 100%;
     margin: 0 auto;
 }
-body{
-    background-color: var(--light-white);
+body {
+  background-color: var(--light-white);
+
+  /* WHOLE PAGE TOP AND BOTTOM PADDING */
+   padding-block: 65px;
 
 }
 
@@ -171,6 +214,8 @@ body{
     line-height: 140%;
     color: var(--footer-text);
     
+    
+    
 }
 
 .search-button {
@@ -195,12 +240,15 @@ body{
     background-color: #60ABFF;
 }
 
+
+
 /* Styling for the hero section */
 
 /* section-gap */
-.hero-section {
+.hero-section, .table-wrapper, .footer-section {
     margin-top: 40px;
 }
+
 
 .planet-card {
     display: flex;
@@ -225,6 +273,13 @@ body{
     flex-direction: column;
     gap: 24px;
     width: 480px;
+
+}
+
+.planet-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 
 }
 
@@ -270,7 +325,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    flex: 1;
+  
     
 }
 
@@ -301,12 +356,14 @@ body{
     display: flex;
     align-items: center;
     gap: 16px;
+    min-width: 0;
     
 }
 
 .fact-icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 #planet-temperature, #planet-diameter, #planet-moons, #planet-distance {
     font-family: var(--font-heading);
@@ -315,6 +372,235 @@ body{
     line-height: var(--line-height-body);
     color: var(--footer-text);
 }
+
+
+/* Tablet responsive design */
+
+
+@media screen and (max-width: 768px) {
+
+  /* whole page top and bottom padding */
+    body {
+      padding-block:  40px;
+
+    }
+
+    .section-content {
+      max-width: 730px;
+      
+      
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+  /* whole page top and bottom padding */
+  body {
+      
+      padding-block: 32px;
+
+   }
+
+    .section-content {
+      max-width: 343px;  
+       
+    }
+
+    .theme-toggle {
+      gap: 12px;
+   }
+
+   .planet-search {
+      padding: 8px 12px;
+      
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+   }
+
+    .search-input {
+        font-size: var(--font-size-s);
+        
+    }
+
+    .search-button {
+        padding: 12px 20px;
+        
+    }
+
+    /* hero section  */
+
+    .planet-card {
+        display:grid;
+        grid-template-columns: 70px 1fr;
+        padding: 32px 24px;
+        row-gap: 24px;
+        column-gap: 20px;
+    }
+
+    .planet-content {
+       display: contents;
+    }
+
+    .planet-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .planet-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .planet-header {
+      grid-column: 2;
+      grid-row: 1;
+      gap: 4px;
+    }
+
+    #planet-description {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        
+    }
+
+    .planet-stats {
+        grid-column: 1 / -1;
+        grid-row: 3;
+
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .planet-stats > div {
+      flex: none;
+    }
+
+    .planet-facts {
+        grid-column: 1 / -1;
+        grid-row: 4;
+
+        grid-template-columns: 1fr;
+        
+    }
+  
+  }
+
+
+@media screen and (max-width: 375px) {
+    
+    /* whole page top and bottom padding */
+  body {
+      
+      padding-block: 32px;
+
+   }
+
+    .section-content {
+      max-width: 343px;  
+       
+    }
+
+    .theme-toggle {
+      gap: 12px;
+   }
+
+   .planet-search {
+      padding: 8px 12px;
+      
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+   }
+
+    .search-input {
+        font-size: var(--font-size-s);
+        
+    }
+
+    .search-button {
+        padding: 12px 20px;
+        
+    }
+
+    /* hero section  */
+
+    .planet-card {
+        display:grid;
+        grid-template-columns: 70px 1fr;
+        padding: 32px 24px;
+        row-gap: 24px;
+        column-gap: 20px;
+    }
+
+    .planet-content {
+       display: contents;
+    }
+
+    .planet-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .planet-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .planet-header {
+      grid-column: 2;
+      grid-row: 1;
+      gap: 4px;
+    }
+
+    #planet-description {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        
+    }
+
+    .planet-stats {
+        grid-column: 1 / -1;
+        grid-row: 3;
+
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .planet-facts {
+        grid-column: 1 / -1;
+        grid-row: 4;
+
+        grid-template-columns: 1fr;
+        
+    }
+
+
+
+
+    
+
+
+
+    
+  }
+
+
+
+
+
 
 
 
@@ -333,71 +619,69 @@ body{
     --icons-color:#FFFFFF;
 
     }
+
+} */
+    
    
 
 
 /* Styling for the table */
 
-.table-wrapper{
-  gap: 40px;
-  angle: 0 deg;
- opacity: 1; 
- padding: 0 20px;
+.table-wrapper {
+  width: var(--section-width);
+  height: 787px;
+  padding: 0 20px;
 }
 
 .table-wrapper h2 {
-    font-size: var(--font-size-x2);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-body);
-    letter-spacing: -2%;
-    color: var(--dark-blue);
-    font-family: var(--font-body);
-    margin-bottom: 10px;
+  font-size: var(--font-size-x2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-body);
+  color: var(--dark-blue);
+  font-family: var(--font-body);
+  margin-bottom: 10px;
 }
 
 .table-wrapper p {
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    letter-spacing: 0%;
-    color: var(--text-blue);
-    margin-bottom: 24px;
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--text-blue);
+  margin-bottom: 24px;
 }
 
 .table-wrapper table {
-   text-align: center;
+  text-align: center;
 }
 
 table caption {
-    font-size: var(--font-size-m);
-    font-weight: var( --font-weight-semibold);
-    line-height: var(--line-height-body);
-    letter-spacing: -2%;
-    font-family: var(--font-body);
-    color: var(--text-blue);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+  letter-spacing: -2%;
+  font-family: var(--font-body);
+  color: var(--text-blue);
 }
 
 
 thead th {
-    background-color: var(--dark-blue);
-    color: var(--white-color);
+  background-color: var(--dark-blue);
+  color: var(--white-color);
   width: 156.6px;
-    height: 60px;
-    top: 38.08px;
-    border: 2px solid var(--white-color ); 
-    font-weight: var(--font-weight-bold);
+  height: 60px;
+  top: 38.08px;
+  border: 2px solid var(--white-color);
+  font-weight: var(--font-weight-bold);
 }
 
-
-thead th:nth-child(1) { 
-  border-radius: 16px 0px  0px 0px;
-    width: 256.11px;
+thead th:nth-child(1) {
+  border-radius: 16px 0px 0px 0px;
+  width: 256.11px;
 }
 
-thead th:nth-child(4) { 
-  border-radius: 0px 16px  0px 0px;
+thead th:nth-child(4) {
+  border-radius: 0px 16px 0px 0px;
 }
-
 
 /* Styling for the table body - first row */
 
@@ -423,7 +707,6 @@ table tbody th, td{
  .footer-section{
     width: 100%;
      padding: 0;
-     margin-top: 2%;
  }
 
 
@@ -434,35 +717,39 @@ table tbody th, td{
     gap : 80px;
  }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
 
 /* left side of the footer*/
-.footer-container-all{
+.footer-container-all {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  > .footer-title {
+    font-family: var(--font-body);
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-body);
+    letter-spacing: -2%;
+    vertical-align: middle;
+    font-weight: var(--font-weight-semibold);
+    color: var(--footer-text);
+  }
+  > .footer-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
-    >.footer-title{
-        font-family: var(--font-body);
-        font-size: var(--font-size-1);
-        line-height: var(--line-height-body);
-        letter-spacing: -2%;
-        vertical-align: middle;
-        font-weight: var(--font-weight-semibold);
-        color: var(--footer-text);
-    }
-    >.footer-list{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    
-    }
+    gap: 8px;
+  }
 }
-    .footer-link {
-        font-family: var(--font-body);
-        font-size: var(--font-size-n);
-        color: var(--footer-text);
-        line-height: var(--line-height-body);
-        letter-spacing: -2%;
-        font-weight: var(--font-weight-semibold);
-       
-    }
+.footer-link {
+  font-family: var(--font-body);
+  font-size: var(--font-size-n);
+  color: var(--footer-text);
+  line-height: var(--line-height-body);
+  letter-spacing: -2%;
+  font-weight: var(--font-weight-semibold);
+}
