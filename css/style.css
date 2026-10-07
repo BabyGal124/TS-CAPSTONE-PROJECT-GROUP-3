@@ -459,7 +459,9 @@ table tbody th, td{
  /* Styling for the page= */
  .footer-section{
     width: 100%;
-     padding: 0;
+     padding:50px 20px;
+     text-align:center;
+     line-height:1.6;
  }
 
 
