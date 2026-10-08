@@ -738,51 +738,12 @@ table tbody th, td{
     gap: 8px;
   }
 }
-.footer-link {
-  font-family: var(--font-body);
-  font-size: var(--font-size-n);
-  color: var(--footer-text);
-  line-height: var(--line-height-body);
-  letter-spacing: -2%;
-  font-weight: var(--font-weight-semibold);
- 
-}
-
-
-/* Footer responsiveness */
-@media (max-width: 768px) {
-  .footer-container {
-  justify-content: space-between;
-    gap: 32px;
-  }
-
-  }
-  
-
-
-@media (max-width: 530px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 28px;
-  }
-
-  .footer-container-all {
-    width: 100%;
-    flex-basis: 100%;
-  }
-}
-
-
-@media (max-width: 375px) {
- .footer-section {
-    padding-inline: 16px;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 24px;
-  }
-  
-}
-
-
+    .footer-link {
+        font-family: var(--font-body);
+        font-size: var(--font-size-n);
+        color: var(--footer-text);
+        line-height: var(--line-height-body);
+        letter-spacing: -2%;
+        font-weight: var(--font-weight-semibold);
+       
+    }
