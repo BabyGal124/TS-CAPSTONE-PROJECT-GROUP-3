@@ -42,53 +42,48 @@
 
   /*site max width */
   --site-max-width: 1200px;
+  --section-width: 730px;
 }
 
-:root{
-    /*Colors*/
-    --white-text-color:#FFFFFF;
-    --white-color:#FFFFFF;
-    --blue-color: #0079FF;
-    --black-color:#2B3442;
-    --light-white: #F6F8FF;
-    --dark-blue: #164BAF;
-    --text-blue:#0F2A44;
-    --light-blue:#D1E3FF;
-    --footer-text:#4B6A9B;
-    --icons-color:#141D2F;
-    --light-grey: #F2F7FF;
+:root {
+  /*Colors*/
+  --white-text-color: #ffffff;
+  --white-color: #ffffff;
+  --blue-color: #0079ff;
+  --black-color: #2b3442;
+  --light-white: #f6f8ff;
+  --dark-blue: #164baf;
+  --text-blue: #0f2a44;
+  --light-blue: #d1e3ff;
+  --footer-text: #4b6a9b;
+  --icons-color: #141d2f;
+  --light-grey: #f2f7ff;
 
-            
-    /*Font-Family */
-    --font-heading: "Space Mono", monospace;
-    --font-body: "Inter", sans-serif;
+  /*Font-Family */
+  --font-heading: 'Space Mono', monospace;
+  --font-body: 'Inter', sans-serif;
 
+  /* font size*/
+  --font-size-s: 13px;
+  --font-size-t: 15px;
+  --font-size-n: 16px;
+  --font-size-m: 18px;
+  --font-size-1: 20px;
+  --font-size-x1: 26px;
+  --font-size-x2: 32px;
 
-     /* font size*/
-     --font-size-s:13px;
-    --font-size-t:15px;
-    --font-size-n:16px; 
-    --font-size-m:18px;
-    --font-size-1:20px;
-    --font-size-x1:26px;
-    --font-size-x2: 32px;
+  /* font weight*/
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
-    
+  /* Line Heights */
+  --line-height-body: 150%;
 
-    /* font weight*/
-    --font-weight-normal:400;
-    --font-weight-medium:500;
-    --font-weight-semibold:600;
-    --font-weight-bold:700;
-
-    
-    /* Line Heights */
-    --line-height-body:150%;
-
-    /*site max width */
-    --site-max-width:1440px;
+  /*site max width */
+  --site-max-width: 1440px;
 }
-
 
 /*Styling for the whole site*/
 ul {
@@ -106,16 +101,16 @@ button {
 html {
   scroll-behavior: smooth;
 }
-.section{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: var(--site-max-width);
-    width: 100%;
+.section {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
+  width: 100%;
 }
-.section-content{
-    max-width: 730px;
-    width: 100%;
-    margin: 0 auto;
+.section-content {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
 }
 body {
   background-color: var(--light-white);
@@ -123,239 +118,232 @@ body {
 
 /* styling for the header */
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-logo img {
-    width: 121px;
-    height: auto;
+  width: 121px;
+  height: auto;
 }
 
 .theme-toggle {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 /* Focuus state of the theme toggle */
 
 .theme-toggle:focus {
-    box-shadow: 0 0 0 3px var(--light-white),
-                0 0 0 5px var(--blue-color);
-                
-    border-radius: 4px;
+  box-shadow:
+    0 0 0 3px var(--light-white),
+    0 0 0 5px var(--blue-color);
+
+  border-radius: 4px;
 }
 
 .theme-text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-s);
-    line-height: 140%;
-    letter-spacing: 2.5px;
-    color: var(--footer-text);
-    font-weight: var(--font-weight-bold);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-s);
+  line-height: 140%;
+  letter-spacing: 2.5px;
+  color: var(--footer-text);
+  font-weight: var(--font-weight-bold);
 }
 
 .theme-icon img {
-    width: 20px;
-    height: 20px;
-  
+  width: 20px;
+  height: 20px;
 }
 
 /* styling for search section */
 
-
 /* section-gap */
 .search-section {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .planet-search {
-    display: flex;
-    align-items: center;
-    height: 69px;
-    width: 100%;
-    background-color: var(--white-color);
-    border-radius: 16px;
-    padding: 8px 12px 8px 24px;
-    justify-content: space-between;
-    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
-    
+  display: flex;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 16px;
+  padding: 8px 12px 8px 24px;
+  justify-content: space-between;
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
 }
 
 /* planet-search focus */
 
 .planet-search:focus-within {
-    box-shadow: 0 0 0 3px var(--light-white),
-                0 0 0 5px var(--blue-color),
-    0 16px 30px -10px rgba(70, 96, 187, 0.198);    
-
+  box-shadow:
+    0 0 0 3px var(--light-white),
+    0 0 0 5px var(--blue-color),
+    0 16px 30px -10px rgba(70, 96, 187, 0.198);
 }
 
 .search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
 }
 
 .search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-normal);
-    line-height: 140%;
-    color: var(--footer-text);
-    
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-normal);
+  line-height: 140%;
+  color: var(--footer-text);
 }
 
 .search-button {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 10px;
-    padding: 12px 24px;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-n);
-    font-weight: var(--font-weight-bold);
-    line-height: 150%;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-bold);
+  line-height: 150%;
 }
 
 /* Search Button Focus */
 .search-button:focus {
-    box-shadow: 0 0 0 2px var(--light-white),
-                0 0 0 4px var(--blue-color);
+  box-shadow:
+    0 0 0 2px var(--light-white),
+    0 0 0 4px var(--blue-color);
 }
 
 /* search button hover */
 .search-button:hover {
-    background-color: #60ABFF;
+  background-color: #60abff;
 }
 
 /* Styling for the hero section */
 
 /* section-gap */
 .hero-section {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .planet-card {
-    display: flex;
-    width: 100%;
-    padding: 48px;
-    gap: 32px;
-    border-radius: 15px;
-    background-color: var(--white-color);
-    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
-
+  display: flex;
+  width: 100%;
+  padding: 48px;
+  gap: 32px;
+  border-radius: 15px;
+  background-color: var(--white-color);
+  box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
 }
 
-.planet-image img{
-    width: 117px;
-    height: 117px;
-    border-radius: 50%;
-    object-fit: cover;
+.planet-image img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .planet-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 480px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 480px;
 }
 
 #planet-name {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-1);
-    font-weight: var(--font-weight-bold);
-    line-height: 120%;
-    color: var(--black-color);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-bold);
+  line-height: 120%;
+  color: var(--black-color);
 }
 
 #planet-type {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-n);
-    font-weight: var(--font-weight-normal);
-    line-height: 150%;
-    color: var(--blue-color);
-    
+  font-family: var(--font-heading);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-normal);
+  line-height: 150%;
+  color: var(--blue-color);
 }
 #planet-description {
-   font-family: var(--font-heading);
-   font-size: var(--font-size-t);
-   font-weight: var(--font-weight-normal);
-   color: var(--footer-text);
-   opacity: 0.75;
-   line-height: var(--line-height-body);
-
-
+  font-family: var(--font-heading);
+  font-size: var(--font-size-t);
+  font-weight: var(--font-weight-normal);
+  color: var(--footer-text);
+  opacity: 0.75;
+  line-height: var(--line-height-body);
 }
 
 /* styling for the gravity, mass, period container */
 
 .planet-stats {
-    display: flex;
-    justify-content: space-between;
-    height: 85px;
-    padding: 16px 32px;
-    border-radius: 10px;
-    background-color: var(--light-white);
+  display: flex;
+  justify-content: space-between;
+  height: 85px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  background-color: var(--light-white);
 }
 
 .planet-stats > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    flex: 1;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
 }
 
 .stat-label {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    color: var(--footer-text);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--footer-text);
 }
 
-#planet-gravity, #planet-mass, #planet-period {
-    font-family: var(--font-heading);
-    font-size: 22px;
-    font-weight: var(--font-weight-bold);
-    line-height: 140%;
-    color: var(--black-color);
+#planet-gravity,
+#planet-mass,
+#planet-period {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  line-height: 140%;
+  color: var(--black-color);
 }
 
 /* styling for the hero planet-facts  sections */
 .planet-facts {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .planet-fact {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .fact-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
-#planet-temperature, #planet-diameter, #planet-moons, #planet-distance {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-t);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    color: var(--footer-text);
+#planet-temperature,
+#planet-diameter,
+#planet-moons,
+#planet-distance {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-t);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  color: var(--footer-text);
 }
-
-
 
 /* Styling for color Switch */
 /* @media(prefers-color-scheme: dark){
@@ -370,26 +358,47 @@ body {
     --light-blue:#D1E3FF;
     --footer-text:#D1E3FF;
     --icons-color:#FFFFFF;
-
     }
-   
+ */
 
+body.dark-mode {
+  --white-color: #1e2a47;
+  --light-white: #141d2f;
+  --light-grey: #1e2a47;
+  --black-color: #ffffff;
+  --text-blue: #d1e3ff;
+  --footer-text: #90a4d4;
+  --light-blue: #304b78;
+  --dark-blue: #0079ff;
+  background-color: var(--light-white);
+}
+
+body.dark-mode thead th {
+  border-color: var(--light-white);
+}
+
+body.dark-mode tbody th,
+body.dark-mode tbody td {
+  border-color: var(--light-white);
+}
 
 /* Styling for the table */
 
 .table-wrapper {
-  width: var(--section-width);
-  height: 787px;
-  padding: 0 20px;
+  width: 100%;
+  max-width: var(--section-width);
+  margin: 0 auto 40px;
+  padding: 0 19px;
+  height: auto;
 }
 
 .table-wrapper h2 {
   font-size: var(--font-size-x2);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-body);
   color: var(--dark-blue);
   font-family: var(--font-body);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .table-wrapper p {
@@ -397,76 +406,81 @@ body {
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-body);
   color: var(--text-blue);
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .table-wrapper table {
-  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
 }
 
 table caption {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-body);
-  letter-spacing: -2%;
+  text-align: left;
   font-family: var(--font-body);
   color: var(--text-blue);
+  margin-bottom: 24px;
 }
 
+/* Styling for the table header */
 
 thead th {
   background-color: var(--dark-blue);
   color: var(--white-color);
-  width: 156.6px;
-  height: 60px;
-  top: 38.08px;
+  padding: 16px 12px;
   border: 2px solid var(--white-color);
   font-weight: var(--font-weight-bold);
+  text-align: center;
 }
 
-thead th:nth-child(1) {
-  border-radius: 16px 0px 0px 0px;
-  width: 256.11px;
+thead th:first-child {
+  border-radius: 16px 0 0 0;
 }
 
-thead th:nth-child(4) {
-  border-radius: 0px 16px 0px 0px;
+thead th:last-child {
+  border-radius: 0 16px 0 0;
 }
 
-/* Styling for the table body - first row */
+th,
+td {
+  font-size: var(--font-size-n);
+}
 
 tbody .side-planet-name {
   background-color: var(--light-blue);
   font-weight: var(--font-weight-bold);
 }
 
-table tbody th, td{ 
-    width: 156.6px;
-    height: 60.38px; 
-    border: 2px solid var(--white-color ); 
-    font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-n);
-    line-height: var(--line-height-body);
-    letter-spacing: -2%;
-    background-color: var(--light-grey );
+table tbody th,
+td {
+  width: 156.6px;
+  height: 60.38px;
+  border: 2px solid var(--white-color);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-n);
+  line-height: var(--line-height-body);
+  background-color: var(--light-grey);
 }
 
-
-
+*/
  /* Styling for the page= */
- .footer-section{
-    width: 100%;
-     padding: 0;
-     margin-top: 2%;
- }
+ .footer-section {
+  width: 100%;
+  padding: 0;
+  margin-top: 2%;
+}
 
-
- .footer-container {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap : 80px;
- }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
 
 .footer-container {
   display: flex;
@@ -503,4 +517,47 @@ table tbody th, td{
   line-height: var(--line-height-body);
   letter-spacing: -2%;
   font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (max-width: 480px) {
+  .table-wrapper {
+    max-width: 343px;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .table-wrapper h2 {
+    font-size: var(--font-size-x1);
+  }
+
+  .table-wrapper p,
+  table caption {
+    font-size: var(--font-size-t);
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    font-size: var(--font-size-s);
+  }
+
+  table tbody th,
+  table tbody td {
+    height: 55px;
+    padding: 8px 4px;
+  }
+
+  /* Hide mass column on small screens */
+  .mass-col {
+    display: none;
+  }
+
+  thead th,
+  tbody th,
+  tbody td {
+    width: auto;
+  }
 }
