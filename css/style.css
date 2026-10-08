@@ -86,7 +86,7 @@ body {
     --footer-text:#D1E3FF;
     --icons-color:#FFFFFF;
     }
- */  
+ */
 
 body.dark-mode {
   --white-color: #1e2a47;
@@ -144,14 +144,18 @@ body.dark-mode tbody td {
   overflow: hidden;
 }
 
-table caption {
+table caption,
+.table-wrapper p {
   font-size: var(--font-size-m);
+}
+
+table caption {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-body);
   text-align: left;
   font-family: var(--font-body);
   color: var(--text-blue);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 thead th {
@@ -172,7 +176,9 @@ thead th:last-child {
 }
 
 th,
-td {
+td,
+tbody th,
+tbody td {
   font-size: var(--font-size-n);
 }
 
@@ -187,7 +193,6 @@ tbody td {
   font-family: var(--font-body);
   border: 2px solid var(--white-color);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-n);
   line-height: var(--line-height-body);
   background-color: var(--light-grey);
   text-align: center;
@@ -204,6 +209,7 @@ tbody tr:last-child .side-planet-name:first-child {
 tbody tr:last-child td:last-child {
   border-radius: 0 0 16px 0;
 }
+
 /* Styling for the page= */
 .footer-section {
   width: 100%;
@@ -249,44 +255,55 @@ tbody tr:last-child td:last-child {
 }
 
 @media screen and (max-width: 480px) {
+  /* Table */
   .table-wrapper {
-    max-width: 343px;
-    margin-top: 24px;
-    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .table-wrapper table {
+    min-width: 0;
   }
 
   .table-wrapper h2 {
-    font-size: var(--font-size-x1);
+    font-size: 28px;
   }
 
   .table-wrapper p,
   table caption {
-    font-size: var(--font-size-t);
+    font-size: 16px;
   }
 
-  table {
-    width: 100%;
+  tbody th,
+  tbody td {
+    height: auto;
+    padding: 12px 9px;
   }
 
   th,
-  td {
-    font-size: var(--font-size-s);
-  }
-
-  table tbody th,
-  table tbody td {
-    height: 55px;
-    padding: 8px 4px;
+  td,
+  tbody th,
+  tbody td {
+    font-size: var(--font-size-t);
   }
 
   /* Hide mass column on small screens */
   .mass-col {
     display: none;
   }
+}
 
-   thead th,
+@media screen and (max-width: 360px) {
+  .table-wrapper {
+    padding: 12px;
+  }
+
+  th,
+  td,
   tbody th,
   tbody td {
-    width: auto;
+    font-size: 9px;
+    padding: 8px 4px;
   }
 }
