@@ -1,4 +1,3 @@
-
 const themeToggle = document.querySelector('.theme-toggle');
 const themeText = document.querySelector('.theme-text');
 
