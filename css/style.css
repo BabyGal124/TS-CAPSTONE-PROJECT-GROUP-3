@@ -61,257 +61,16 @@ button {
 html {
   scroll-behavior: smooth;
 }
-.section{
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: var(--site-max-width);
-    width: 100%;
+.section-content {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: var(--site-max-width);
 }
-.section-content{
-    max-width: 730px;
-    width: 100%;
-    margin: 0 auto;
-}
-body{
-    background-color: var(--light-white);
-
+body {
+  background-color: var(--light-white);
 }
 
-/* styling for the header */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.page-logo img {
-    width: 121px;
-    height: auto;
-}
-
-.theme-toggle {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-/* Focuus state of the theme toggle */
-
-.theme-toggle:focus {
-    box-shadow: 0 0 0 3px var(--light-white),
-                0 0 0 5px var(--blue-color);
-                
-    border-radius: 4px;
-}
-
-.theme-text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-s);
-    line-height: 140%;
-    letter-spacing: 2.5px;
-    color: var(--footer-text);
-    font-weight: var(--font-weight-bold);
-}
-
-.theme-icon img {
-    width: 20px;
-    height: 20px;
-  
-}
-
-/* styling for search section */
-
-
-/* section-gap */
-.search-section {
-    margin-top: 40px;
-}
-
-.planet-search {
-    display: flex;
-    align-items: center;
-    height: 69px;
-    width: 100%;
-    background-color: var(--white-color);
-    border-radius: 16px;
-    padding: 8px 12px 8px 24px;
-    justify-content: space-between;
-    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
-    
-}
-
-/* planet-search focus */
-
-.planet-search:focus-within {
-    box-shadow: 0 0 0 3px var(--light-white),
-                0 0 0 5px var(--blue-color),
-    0 16px 30px -10px rgba(70, 96, 187, 0.198);    
-
-}
-
-.search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 20px;
-}
-
-.search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-m);
-    font-weight: var(--font-weight-normal);
-    line-height: 140%;
-    color: var(--footer-text);
-    
-}
-
-.search-button {
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    border-radius: 10px;
-    padding: 12px 24px;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-n);
-    font-weight: var(--font-weight-bold);
-    line-height: 150%;
-}
-
-/* Search Button Focus */
-.search-button:focus {
-    box-shadow: 0 0 0 2px var(--light-white),
-                0 0 0 4px var(--blue-color);
-}
-
-/* search button hover */
-.search-button:hover {
-    background-color: #60ABFF;
-}
-
-/* Styling for the hero section */
-
-/* section-gap */
-.hero-section {
-    margin-top: 40px;
-}
-
-.planet-card {
-    display: flex;
-    width: 100%;
-    padding: 48px;
-    gap: 32px;
-    border-radius: 15px;
-    background-color: var(--white-color);
-    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 0.198);
-
-}
-
-.planet-image img{
-    width: 117px;
-    height: 117px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.planet-content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 480px;
-
-}
-
-#planet-name {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-1);
-    font-weight: var(--font-weight-bold);
-    line-height: 120%;
-    color: var(--black-color);
-}
-
-#planet-type {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-n);
-    font-weight: var(--font-weight-normal);
-    line-height: 150%;
-    color: var(--blue-color);
-    
-}
-#planet-description {
-   font-family: var(--font-heading);
-   font-size: var(--font-size-t);
-   font-weight: var(--font-weight-normal);
-   color: var(--footer-text);
-   opacity: 0.75;
-   line-height: var(--line-height-body);
-
-
-}
-
-/* styling for the gravity, mass, period container */
-
-.planet-stats {
-    display: flex;
-    justify-content: space-between;
-    height: 85px;
-    padding: 16px 32px;
-    border-radius: 10px;
-    background-color: var(--light-white);
-}
-
-.planet-stats > div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    flex: 1;
-    
-}
-
-.stat-label {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    color: var(--footer-text);
-}
-
-#planet-gravity, #planet-mass, #planet-period {
-    font-family: var(--font-heading);
-    font-size: 22px;
-    font-weight: var(--font-weight-bold);
-    line-height: 140%;
-    color: var(--black-color);
-}
-
-/* styling for the hero planet-facts  sections */
-.planet-facts {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.planet-fact {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    
-}
-
-.fact-icon {
-    width: 24px;
-    height: 24px;
-}
-#planet-temperature, #planet-diameter, #planet-moons, #planet-distance {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-t);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    color: var(--footer-text);
-}
-
-
+/* Styling for the page= */
 
 /* Styling for color Switch */
 /* @media(prefers-color-scheme: dark){
@@ -327,7 +86,7 @@ body{
     --footer-text:#D1E3FF;
     --icons-color:#FFFFFF;
     }
-   
+ */  
 
 body.dark-mode {
   --white-color: #1e2a47;
@@ -442,20 +201,15 @@ tbody tr:last-child .side-planet-name:first-child {
   border-radius: 0 0 0 16px;
 }
 
- /* Styling for the page= */
- .footer-section{
-    width: 100%;
-     padding: 0;
-     margin-top: 2%;
- }
-
-
- .footer-container {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap : 80px;
- }
+tbody tr:last-child td:last-child {
+  border-radius: 0 0 16px 0;
+}
+/* Styling for the page= */
+.footer-section {
+  width: 100%;
+  padding: 0;
+  margin-top: 2%;
+}
 
 .footer-container {
   display: flex;
@@ -492,4 +246,47 @@ tbody tr:last-child .side-planet-name:first-child {
   line-height: var(--line-height-body);
   letter-spacing: -2%;
   font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (max-width: 480px) {
+  .table-wrapper {
+    max-width: 343px;
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .table-wrapper h2 {
+    font-size: var(--font-size-x1);
+  }
+
+  .table-wrapper p,
+  table caption {
+    font-size: var(--font-size-t);
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    font-size: var(--font-size-s);
+  }
+
+  table tbody th,
+  table tbody td {
+    height: 55px;
+    padding: 8px 4px;
+  }
+
+  /* Hide mass column on small screens */
+  .mass-col {
+    display: none;
+  }
+
+   thead th,
+  tbody th,
+  tbody td {
+    width: auto;
+  }
 }
