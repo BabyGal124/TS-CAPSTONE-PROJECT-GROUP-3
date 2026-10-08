@@ -108,7 +108,7 @@ html {
 }
 .section{
     margin: 0 auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     max-width: var(--site-max-width);
     width: 100%;
 }
@@ -117,8 +117,9 @@ html {
     width: 100%;
     margin: 0 auto;
 }
-body {
-  background-color: var(--light-white);
+body{
+    background-color: var(--light-white);
+
 }
 
 /* styling for the header */
@@ -210,6 +211,8 @@ body {
     line-height: 140%;
     color: var(--footer-text);
     
+    
+    
 }
 
 .search-button {
@@ -234,12 +237,15 @@ body {
     background-color: #60ABFF;
 }
 
+
+
 /* Styling for the hero section */
 
 /* section-gap */
 .hero-section, .table-wrapper, .footer-section {
     margin-top: 40px;
 }
+
 
 .planet-card {
     display: flex;
@@ -264,6 +270,13 @@ body {
     flex-direction: column;
     gap: 24px;
     width: 480px;
+
+}
+
+.planet-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 
 }
 
@@ -309,7 +322,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    flex: 1;
+  
     
 }
 
@@ -340,12 +353,14 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+    min-width: 0;
     
 }
 
 .fact-icon {
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
 }
 #planet-temperature, #planet-diameter, #planet-moons, #planet-distance {
     font-family: var(--font-heading);
@@ -354,6 +369,235 @@ body {
     line-height: var(--line-height-body);
     color: var(--footer-text);
 }
+
+
+/* Tablet responsive design */
+
+
+@media screen and (max-width: 768px) {
+
+  /* whole page top and bottom padding */
+    body {
+      padding-block:  40px;
+
+    }
+
+    .section-content {
+      max-width: 730px;
+      
+      
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+  /* whole page top and bottom padding */
+  body {
+      
+      padding-block: 32px;
+
+   }
+
+    .section-content {
+      max-width: 343px;  
+       
+    }
+
+    .theme-toggle {
+      gap: 12px;
+   }
+
+   .planet-search {
+      padding: 8px 12px;
+      
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+   }
+
+    .search-input {
+        font-size: var(--font-size-s);
+        
+    }
+
+    .search-button {
+        padding: 12px 20px;
+        
+    }
+
+    /* hero section  */
+
+    .planet-card {
+        display:grid;
+        grid-template-columns: 70px 1fr;
+        padding: 32px 24px;
+        row-gap: 24px;
+        column-gap: 20px;
+    }
+
+    .planet-content {
+       display: contents;
+    }
+
+    .planet-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .planet-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .planet-header {
+      grid-column: 2;
+      grid-row: 1;
+      gap: 4px;
+    }
+
+    #planet-description {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        
+    }
+
+    .planet-stats {
+        grid-column: 1 / -1;
+        grid-row: 3;
+
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .planet-stats > div {
+      flex: none;
+    }
+
+    .planet-facts {
+        grid-column: 1 / -1;
+        grid-row: 4;
+
+        grid-template-columns: 1fr;
+        
+    }
+  
+  }
+
+
+@media screen and (max-width: 375px) {
+    
+    /* whole page top and bottom padding */
+  body {
+      
+      padding-block: 32px;
+
+   }
+
+    .section-content {
+      max-width: 343px;  
+       
+    }
+
+    .theme-toggle {
+      gap: 12px;
+   }
+
+   .planet-search {
+      padding: 8px 12px;
+      
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+   }
+
+    .search-input {
+        font-size: var(--font-size-s);
+        
+    }
+
+    .search-button {
+        padding: 12px 20px;
+        
+    }
+
+    /* hero section  */
+
+    .planet-card {
+        display:grid;
+        grid-template-columns: 70px 1fr;
+        padding: 32px 24px;
+        row-gap: 24px;
+        column-gap: 20px;
+    }
+
+    .planet-content {
+       display: contents;
+    }
+
+    .planet-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .planet-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .planet-header {
+      grid-column: 2;
+      grid-row: 1;
+      gap: 4px;
+    }
+
+    #planet-description {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        
+    }
+
+    .planet-stats {
+        grid-column: 1 / -1;
+        grid-row: 3;
+
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+    }
+
+    .planet-facts {
+        grid-column: 1 / -1;
+        grid-row: 4;
+
+        grid-template-columns: 1fr;
+        
+    }
+
+
+
+
+    
+
+
+
+    
+  }
+
+
+
+
+
 
 
 
