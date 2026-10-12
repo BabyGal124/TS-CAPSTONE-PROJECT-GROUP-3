@@ -1,18 +1,37 @@
 // Dark Mode Toggle
 const themeToggle = document.querySelector('.theme-toggle');
 const themeText = document.querySelector('.theme-text');
+const themeIcon = document.querySelector('.theme-icon img');
+const logoSource = document.querySelector('.page-logo source');
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let hasManualTheme = false;
 
-themeToggle.addEventListener('click', function () {
-  document.body.classList.toggle('dark-mode');
-
-  const isDark = document.body.classList.contains('dark-mode');
-
+function applyTheme(isDark) {
+  document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
   themeText.textContent = isDark ? 'LIGHT' : 'DARK';
+  themeIcon.src = isDark
+    ? './assets/images/Theme Icon-sun.svg'
+    : './assets/images/Theme Icon-moon.svg';
+
+  if (logoSource) {
+    logoSource.media = isDark ? 'all' : 'not all';
+  }
 
   themeToggle.setAttribute(
     'aria-label',
     isDark ? 'Switch to light mode' : 'Switch to dark mode'
   );
+}
+
+applyTheme(systemTheme.matches);
+
+themeToggle.addEventListener('click', function () {
+  hasManualTheme = true;
+  applyTheme(document.documentElement.dataset.theme !== 'dark');
+});
+
+systemTheme.addEventListener('change', (event) => {
+  if (!hasManualTheme) applyTheme(event.matches);
 });
 
 
