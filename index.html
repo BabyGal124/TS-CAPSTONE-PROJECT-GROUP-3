@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,43 +36,37 @@
 
   <body>
     <!-- Header Section -->
-    <header class="page-header section-content">
-      <div class="section-content">
-          <div class="header-container">
-        <a
-          href="./index.html"
-          class="page-logo"
-          aria-label="planet Explorer Home"
-        >
-          <img src="./assets/images/logo-dark.png" alt="Planet Explorer Logo" />
-        </a>
+     <header class="page-header section">
+        <div class="section-content">
+           <div class="header-container">
+            <a href="./index.html" class="page-logo" aria-label="planet Explorer Home">
+                <img src="./assets/images/logo-dark.png" alt="Planet Explorer Logo">
+                
+            </a>
 
-        <button
-          type="button"
-          class="theme-toggle"
-          aria-label="switch between light and dark mode"
-        >
-          <span class="theme-text">DARK</span>
-          <span class="theme-icon" aria-hidden="true">
-            <img src="./assets/images/Half moon.svg" alt="" />
-          </span>
-        </button>
-      </div>
-      </div>
-    
-    </header>
+            <button type="button" class="theme-toggle" aria-label="switch between light and dark mode">
+                <span class="theme-text">DARK</span>
+                <span class="theme-icon" aria-hidden="true">
+                    <img src="./assets/images/Half moon.svg" alt="">
+                </span>
+                
+            </button>
+
+        </div>
+        </div>
+       
+       </header>
 
     <!-- Main content -->
 
     <main>
-      <section class="search-section section" aria-label="planet search">
-        <div class="section-content">
-          <form class="planet-search" role="search">
-            <img
-              src="./assets/images/Search Icon.svg"
-              alt=""
-              class="search-icon"
-            />
+      
+
+        <section class="search-section section" aria-label="planet search">
+          <div class="section-content">
+               <form class="planet-search" role="search">
+         
+            <img src="./assets/images/Search Icon.svg" alt="" class="search-icon">
 
             <input
               type="search"
@@ -88,10 +82,11 @@
         </div>
       </section>
 
-      <!-- Hero Section -->
-      <section class="hero-section section" aria-label="Planet information">
-        <div class="section-content">
-          <article class="planet-card">
+        <!-- Hero Section -->
+        <section class="hero-section section"  aria-label="Planet information">
+          <div class="section-content">
+              <article class="planet-card">
+
             <!-- planet Image -->
             <div class="planet-image">
               <img id="planet-image" src="" alt="" />
@@ -107,20 +102,39 @@
               <p id="planet-description"></p>
 
               <!-- Information box Statistics -->
-              <div class="planet-stats">
-                <div>
-                  <span class="stat-label">Gravity</span>
-                  <strong id="planet-gravity"></strong>
+              <div class="planet-stats" tabindex="0" role="group" aria-label="Planet statistics. Hover or focus to view community statistics.">
+                <div class="planet-stats-view planet-stats-planet">
+                  <div>
+                    <span class="stat-label">Gravity</span>
+                    <strong id="planet-gravity"></strong>
+                  </div>
+
+                  <div>
+                    <span class="stat-label">Mass</span>
+                    <strong id="planet-mass"></strong>
+                  </div>
+
+                  <div>
+                    <span class="stat-label">Period</span>
+                    <strong id="planet-period"></strong>
+                  </div>
                 </div>
 
-                <div>
-                  <span class="stat-label">Mass</span>
-                  <strong id="planet-mass"></strong>
-                </div>
+                <div class="planet-stats-view planet-stats-community">
+                  <div>
+                    <span class="stat-label">Repos</span>
+                    <strong>8</strong>
+                  </div>
 
-                <div>
-                  <span class="stat-label">Period</span>
-                  <strong id="planet-period"></strong>
+                  <div>
+                    <span class="stat-label">Followers</span>
+                    <strong>3938</strong>
+                  </div>
+
+                  <div>
+                    <span class="stat-label">Following</span>
+                    <strong>9</strong>
+                  </div>
                 </div>
               </div>
 
@@ -149,13 +163,17 @@
                     </div>
 
                </div>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <!-- Table section -->
-      <section id="table-section" class="table-wrapper section">
+           </div>
+
+          </article>  
+
+          </div>
+        </section>
+
+   
+    <!-- Table section -->
+      <section id="table-section" class="table-wrapper section" aria-label="Planetary facts table">
         <div class="section-content">
              <h2>Planetary Facts at a Glance</h2>
         <p>
@@ -264,7 +282,7 @@
       </section>
     </main>
 
-    <!-- Footer Section -->
+        <!-- Footer Section -->
     <footer class="footer-section section">
       <div class="section-content">
         <div class="footer-container">
