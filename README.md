@@ -9,7 +9,7 @@ Users can search for different planets using the search bar and switch between l
 
 ## 🚀 Live Demo
 
-Explore the deployed website: [Planet](YOUR-VERCEL-URL)
+Explore the deployed website: [Planet](https://planet-ts-capstone-group-3.vercel.app/)
 
 
 ## 👥 Team Members
