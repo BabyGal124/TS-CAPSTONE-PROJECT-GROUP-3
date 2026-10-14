@@ -7,12 +7,12 @@
 Users can search for different planets using the search bar and switch between light and dark themes for a more comfortable browsing experience.
 
 
-## Live Demo
+## 🚀 Live Demo
 
 Explore the deployed website: [Planet](YOUR-VERCEL-URL)
 
 
-## Team Members
+## 👥 Team Members
 
 | Name | GitHub Profile | Role / Assigned Component |
 |---|---|---|
@@ -22,12 +22,12 @@ Explore the deployed website: [Planet](YOUR-VERCEL-URL)
 | Bakare Agbaraoluwa| [GitHub](https://github.com/Loner533) | Header, Search Bar & Hero Section |
 | Ibrahim Oguntoyinbo | [GitHub](https://github.com/IBFloat) | Table Description & Section |
 | Comfort Ibok | [GitHub](https://github.com/comfortibok) | Table Description & Section |
-| Isreal| [GitHub](https://github.com/easyarita) | Table Description & Section |
+| Isreal Abisola| [GitHub](https://github.com/easyarita) | Table Description & Section |
 | Adekoya Emmanuel | [GitHub](https://github.com/Emmanuel10-tech) | Footer Section|
 | David Emmanuel| [GitHub](https://github.com/BigHarbei) | Footer Section |
 
 
-## Components & Contributors
+## 🛠️ Components & Contributors
 
 The following table outlines the main components and functionality of Planet, their locations within the project, their purpose, and the team members assigned to or involved in their development.
 
@@ -35,7 +35,7 @@ The following table outlines the main components and functionality of Planet, th
 |---|---|---|---|
 | **Project Environment Setup & Global Styling** | `index.html`, `css/style.css`, `script/script.js`, `data/planets.json` | Established the initial project structure and organized the necessary files. Implemented the CSS reset, global styles, colour scheme, and typography to maintain a consistent visual appearance throughout the website. | Joy Kehinde |
 | **Header, Search Bar & Hero Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the header, search bar, and hero section. Implemented responsive layouts to ensure the sections display correctly across desktop, tablet, and mobile screen sizes.  |Ngozi Madu, Abdulrahman Tiamiyu, Bakare Agbaraoluwa |
-| **Planet Data Table** | `index.html`, `css/style.css`, `script/script.js` | Developed the HTML structure and CSS styling for the planetary data table. Implemented responsive layouts to ensure planetary facts remain readable and display correctly across desktop, tablet, and mobile screen sizes. | [Assigned member(s)] |
+| **Planet Data Table** | `index.html`, `css/style.css`, `script/script.js` | Developed the HTML structure and CSS styling for the planetary data table. Implemented responsive layouts to ensure planetary facts remain readable and display correctly across desktop, tablet, and mobile screen sizes. | Comfort Ibok, Bakare Agbaraoluwa, Isreal Abisola |
 | **Footer Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the footer section, implemented responsive layouts for different screen sizes, and verified that all footer links work correctly and navigate to their intended destinations|Joy Kehinde, Adekoya Emmanuel, David Emmanuel |
 | **Planet Data Retrieval (Fetch API)** | `script/script.js`, `data/planets.json` | Set up the Fetch API functionality to retrieve planetary information from the local JSON dataset and display the relevant data on the website. | Joy Kehinde|
 | **Light & Dark Theme Switcher** | `index.html`, `css/style.css`, `script/script.js` | Set up the CSS colour variables for the light and dark themes, defining the colours used across the website for each theme. Implemented the theme-switching functionality, allowing users to switch between light and dark modes and ensuring the website's appearance updates accordingly. | Joy Kehinde |
@@ -44,7 +44,7 @@ The following table outlines the main components and functionality of Planet, th
 
 
 
-## Features
+##  📁 Features
 
 - **Planetary Facts at a Glance:** Explore key facts and information about different planets in one place.
 - **Planet Search:** Search for planets and retrieve their information from the project's JSON dataset using JavaScript's Fetch API.
@@ -53,7 +53,7 @@ The following table outlines the main components and functionality of Planet, th
 - **Responsive Design:** Browse the website across desktop, tablet, and mobile screen sizes.
 
 
-## Technologies Used
+##  💻 Technologies Used
 
 - **HTML5:** Used to structure the website and organize its content into sections.
 - **CSS3:** Used to style the interface, define the colour scheme and typography, and create responsive layouts with light and dark themes.
@@ -63,7 +63,7 @@ The following table outlines the main components and functionality of Planet, th
 - **Git & GitHub:** Used for version control, source code hosting, and team collaboration through branches and pull requests.
 - **Vercel:** Used to deploy the website and make it accessible online.
 
-## How to Run the Project Locally
+##  ⚙️ How to Run the Project Locally
 
 ### Prerequisites
 
