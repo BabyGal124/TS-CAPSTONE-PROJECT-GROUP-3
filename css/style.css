@@ -647,6 +647,7 @@ tbody tr:last-child > :last-child {
 
     .section-content {
       max-width: 730px;
+        padding-inline: 16px;
       
       
     }
@@ -681,7 +682,10 @@ tbody tr:last-child > :last-child {
       padding-block: 32px;
 
    }
+.section-content{
+  padding-inline: 16px;
 
+}
     .theme-toggle {
       gap: 12px;
    }
@@ -747,9 +751,23 @@ tbody tr:last-child > :last-child {
         grid-column: 1 / -1;
         grid-row: 3;
 
-        flex-direction: column;
+      flex-direction: column;
         height: auto;
         padding: 16px 20px;
+    }
+
+    .planet-stats-view {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Keep only Gravity, Mass, and Period in the responsive stats card. */
+    .planet-stats-planet {
+      display: flex !important;
+    }
+
+    .planet-stats-community {
+      display: none !important;
     }
 
     .planet-stats-view > div {
@@ -840,9 +858,14 @@ tbody tr:last-child > :last-child {
         grid-column: 1 / -1;
         grid-row: 3;
 
-        flex-direction: column;
+      flex-direction: column;
         height: auto;
         padding: 16px 20px;
+    }
+
+    .planet-stats-view {
+      display: flex;
+      flex-direction: column;
     }
 
     .planet-facts {
