@@ -25,6 +25,7 @@
   --text-color:#212121;
    --table-body-text:#f2f7ff;
    --border-color:#ffffff;
+     --button-text-color: #ffffff;
 
 
   /*Font-Family */
@@ -114,7 +115,11 @@ body {
 .theme-toggle {
     display: flex;
     align-items: center;
-    gap: 16px;
+
+     width: 100px;
+     padding:5px;
+     justify-content: space-around;
+   
 }
 
 /* Focuus state of the theme toggle */
@@ -187,7 +192,7 @@ body {
 
 .search-button {
     background-color: var(--blue-color);
-    color: var(--white-color);
+    color: var(--button-text-color);
     border-radius: 10px;
     padding: 12px 24px;
     font-family: var(--font-heading);
@@ -560,6 +565,7 @@ tbody tr:last-child > :last-child {
      --table-body-bg:#90A4D4;
      --table-body-text:#f2f7ff;
          --text-color:#212121;
+           --button-text-color: #ffffff;
 
   }
 
@@ -586,6 +592,7 @@ tbody tr:last-child > :last-child {
     --table-body-bg:#90A4D4;
     --table-body-text:#f2f7ff;
         --text-color:#212121;
+          --button-text-color: #ffffff;
 }
 
 [data-theme="dark"] .planet-facts .fact-icon {
@@ -626,6 +633,7 @@ tbody tr:last-child > :last-child {
     --border-color:#ffffff;
     --table-body-text:#f2f7ff;
     --text-color:#212121;
+      --button-text-color: #ffffff;
 
 }
 
