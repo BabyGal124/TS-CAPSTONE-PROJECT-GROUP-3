@@ -18,7 +18,7 @@ Explore the deployed website: [Planet](https://planet-ts-capstone-group-3.vercel
 |---|---|---|
 | Joy Kehinde| [GitHub](https://github.com/BabyGal124) | Group Lead |
 | Ngozi Madu| [GitHub](https://github.com/NgoziMadu) | Header, Search Bar & Hero Section |
-| Abdulrahman Tiamiyu| [GitHub](https://github.com/Tiamiyu-Abdulrahman1) | Header, Search Bar & Hero Section |
+| Tiamiyu Abdulrahman| [GitHub](https://github.com/Tiamiyu-Abdulrahman1) | Header, Search Bar & Hero Section |
 | Bakare Agbaraoluwa| [GitHub](https://github.com/Loner533) | Header, Search Bar & Hero Section |
 | Ibrahim Oguntoyinbo | [GitHub](https://github.com/IBFloat) | Table Description & Section |
 | Comfort Ibok | [GitHub](https://github.com/comfortibok) | Table Description & Section |
@@ -34,7 +34,7 @@ The following table outlines the main components and functionality of Planet, th
 | Component / Function | File Location | Description | Contributor(s) / Assigned Group |
 |---|---|---|---|
 | **Project Environment Setup & Global Styling** | `index.html`, `css/style.css`, `script/script.js`, `data/planets.json` | Established the initial project structure and organized the necessary files. Implemented the CSS reset, global styles, colour scheme, and typography to maintain a consistent visual appearance throughout the website. | Joy Kehinde |
-| **Header, Search Bar & Hero Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the header, search bar, and hero section. Implemented responsive layouts to ensure the sections display correctly across desktop, tablet, and mobile screen sizes.  |Ngozi Madu, Abdulrahman Tiamiyu, Bakare Agbaraoluwa |
+| **Header, Search Bar & Hero Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the header, search bar, and hero section. Implemented responsive layouts to ensure the sections display correctly across desktop, tablet, and mobile screen sizes.  |Ngozi Madu, Tiamiyu Abdulrahman, Bakare Agbaraoluwa |
 | **Planet Data Table** | `index.html`, `css/style.css`, `script/script.js` | Developed the HTML structure and CSS styling for the planetary data table. Implemented responsive layouts to ensure planetary facts remain readable and display correctly across desktop, tablet, and mobile screen sizes. | Comfort Ibok,  Ibrahim Oguntoyinbo, Isreal Abisola |
 | **Footer Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the footer section, implemented responsive layouts for different screen sizes, and verified that all footer links work correctly and navigate to their intended destinations|Joy Kehinde, Adekoya Emmanuel, David Emmanuel |
 | **Planet Data Retrieval (Fetch API)** | `script/script.js`, `data/planets.json` | Set up the Fetch API functionality to retrieve planetary information from the local JSON dataset and display the relevant data on the website. | Joy Kehinde|
