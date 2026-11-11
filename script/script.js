@@ -3,12 +3,19 @@ const themeToggle = document.querySelector('.theme-toggle');
 const themeText = document.querySelector('.theme-text');
 const themeIcon = document.querySelector('.theme-icon img');
 const logoSource = document.querySelector('.page-logo source');
+
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
-let hasManualTheme = false;
+
+// Retrieves the user's previously selected theme
+const savedTheme = localStorage.getItem('theme');
+
+let hasManualTheme = savedTheme === 'dark' || savedTheme === 'light';
 
 function applyTheme(isDark) {
   document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+
   themeText.textContent = isDark ? 'LIGHT' : 'DARK';
+
   themeIcon.src = isDark
     ? './assets/images/Theme Icon-sun.svg'
     : './assets/images/Theme Icon-moon.svg';
@@ -23,15 +30,29 @@ function applyTheme(isDark) {
   );
 }
 
-applyTheme(systemTheme.matches);
+// This restores saved theme or uses system preference
+if (hasManualTheme) {
+  applyTheme(savedTheme === 'dark');
+} else {
+  applyTheme(systemTheme.matches);
+}
 
+// This saves the theme whenever the user switches it
 themeToggle.addEventListener('click', function () {
   hasManualTheme = true;
-  applyTheme(document.documentElement.dataset.theme !== 'dark');
+
+  const isDark = document.documentElement.dataset.theme !== 'dark';
+
+  applyTheme(isDark);
+
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
 
+// Following system changes only when no manual preference exists
 systemTheme.addEventListener('change', (event) => {
-  if (!hasManualTheme) applyTheme(event.matches);
+  if (!hasManualTheme) {
+    applyTheme(event.matches);
+  }
 });
 
 
