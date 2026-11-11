@@ -102,7 +102,7 @@ function findPlanetByName(inputValue) {
 //Fecth JSON data from planets.json file
 async function fetchPlanets() {
   try {
-    const response = await fetch("./data/planets.json");
+    const response = await fetch("https://anurella.github.io/json/planet.json");
 
     if (!response.ok) {
       throw new Error(`Failed to load JSON: ${response.status}`);
