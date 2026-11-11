@@ -33,11 +33,12 @@ The following table outlines the main components and functionality of Planet, th
 
 | Component / Function | File Location | Description | Contributor(s) / Assigned Group |
 |---|---|---|---|
-| **Project Environment Setup & Global Styling** | `index.html`, `css/style.css`, `script/script.js`, `data/planets.json` | Established the initial project structure and organized the necessary files. Implemented the CSS reset, global styles, colour scheme, and typography to maintain a consistent visual appearance throughout the website. | Joy Kehinde |
+| **Project Environment Setup & Global Styling** | `index.html`, `css/style.css`, `script/script.js`, 
+ | Established the initial project structure and organized the necessary files. Implemented the CSS reset, global styles, colour scheme, and typography to maintain a consistent visual appearance throughout the website. | Joy Kehinde |
 | **Header, Search Bar & Hero Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the header, search bar, and hero section. Implemented responsive layouts to ensure the sections display correctly across desktop, tablet, and mobile screen sizes.  |Ngozi Madu, Tiamiyu Abdulrahman, Bakare Agbaraoluwa |
 | **Planet Data Table** | `index.html`, `css/style.css`, `script/script.js` | Developed the HTML structure and CSS styling for the planetary data table. Implemented responsive layouts to ensure planetary facts remain readable and display correctly across desktop, tablet, and mobile screen sizes. | Comfort Ibok,  Ibrahim Oguntoyinbo, Isreal Abisola |
 | **Footer Section** | `index.html`, `css/style.css` | Developed the HTML structure and CSS styling for the footer section, implemented responsive layouts for different screen sizes, and verified that all footer links work correctly and navigate to their intended destinations|Joy Kehinde, Adekoya Emmanuel, David Emmanuel |
-| **Planet Data Retrieval (Fetch API)** | `script/script.js`, `data/planets.json` | Set up the Fetch API functionality to retrieve planetary information from the local JSON dataset and display the relevant data on the website. | Joy Kehinde|
+| **Planet Data Retrieval (Fetch API)** | `script/script.js` | Set up the Fetch API functionality to retrieve planetary information from a remote JSON dataset ([View JSON Dataset](https://anurella.github.io/json/planet.json)) and display the relevant data on the website. | Joy Kehinde |
 | **Light & Dark Theme Switcher** | `index.html`, `css/style.css`, `script/script.js` | Set up the CSS colour variables for the light and dark themes, defining the colours used across the website for each theme. Implemented the theme-switching functionality, allowing users to switch between light and dark modes and ensuring the website's appearance updates accordingly. | Joy Kehinde |
 | **Project Review & Integration** | Across the project files | Reviewed the overall project to ensure the use of semantic HTML elements and consistency with the intended design. Identified and corrected issues, improved areas requiring adjustments, and checked that the different sections followed the project's established structure and styling. | Joy Kehinde |
 | **Deployment** | Vercel | Deployed the Planet website using Vercel, making the application accessible online through a live deployment URL. | Joy Kehinde |
@@ -104,8 +105,6 @@ Planet/
 │   └── images/
 ├── css/
 │   └── style.css       # Global styles, colours, typography, responsiveness and themes
-├── data/
-│   └── planets.json    # Dataset containing planetary information
 ├── script/
 │   └── script.js       # Planet search, data retrieval, error handling and theme switching
 ├── index.html          # Main HTML structure of the website
