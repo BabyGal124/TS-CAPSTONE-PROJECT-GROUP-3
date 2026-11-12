@@ -94,6 +94,7 @@ html {
 body {
   background-color: var(--light-white);
   padding-block: 40px;
+  font-family: var( --font-body);
 }
 
 /* Styling for the page */
@@ -133,7 +134,6 @@ body {
 .theme-toggle:focus {
   box-shadow: 0 0 0 3px var(--light-white),
     0 0 0 5px var(--blue-color);
-
   border-radius: 4px;
 }
 
